@@ -1,0 +1,163 @@
+/* Reset */
+body {
+    background-color: white;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Header fisso in alto */
+  .site-header {
+    background-color: white;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+  }
+  
+  /* Contenitore con spazi laterali */
+  .header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: sticky; /* Aggiunto per fissare la prima riga */
+    top: 0;
+    z-index: 100;
+  }
+  
+  /* Riga nera sottile */
+  .black-bar {
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Menu hamburger + testo */
+  .menu-button {
+    display: flex;
+    align-items: center;
+    font-size: 1.1rem;
+    cursor: pointer;
+    color: black;
+    font-weight: 500;
+    background: none;
+    border: none;
+  }
+  
+  .menu-button i {
+    font-size: 1.5rem;
+    margin-right: 5px;
+    color: black;
+  }
+  
+  /* Nascondi checkbox */
+  #menu-toggle {
+    display: none;
+  }
+  
+  /* Navbar link */
+  .navbar-links {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .navbar-links a {
+    font-size: 0.8rem;
+    text-decoration: none;
+    color: black;
+  }
+  
+  /* Pulsanti abbonati e accedi */
+  .buttons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .btn-danger {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    font-size: 0.8rem;
+  }
+  
+  .btn-light {
+    background-color: #f8f9fa;
+    font-size: 0.8rem;
+    padding: 6px 12px;
+  }
+  
+  /* Seconda riga orizzontale */
+  .second-row {
+    max-width: 1200px;
+    margin: 70px auto 0 auto;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+  }
+
+  .second-row .btn-danger {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  /* Logo centrato */
+  .logo-center {
+    height: 50px;
+  }
+  
+  /* Nascondi seconda riga su mobile */
+  @media (max-width: 768px) {
+    .navbar-links,
+    .second-row,
+    .black-bar:last-of-type {
+      display: none;
+    }
+  }
+
+  /* Terza riga: TEMI + Navbar */
+.third-row {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+    position: sticky; /* Aggiunto per fissare la terza riga */
+    top: 70px; /* Aggiungi un piccolo offset per evitare che si sovrapponga alla prima riga */
+    background-color: white; /* Impostato uno sfondo bianco per evitare trasparenze */
+    z-index: 100;
+  }
+  
+  /* Titolo TEMI (a sinistra) */
+  .temi-title {
+    font-weight: bold;
+    font-size: 0.9rem;
+    color: black;
+  }
+  
+  /* Navbar con i link (a destra) */
+  .temi-links {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 15px;
+    white-space: nowrap;
+  }
+  
+  .temi-links a {
+    text-decoration: none;
+    color: black;
+    font-size: 0.8rem;
+    white-space: nowrap;
+  }
+
+  
