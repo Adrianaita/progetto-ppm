@@ -23,7 +23,7 @@
 
   <body>
     <!-- Intestazione -->
-    <header class="site-header">
+    <header class="header-top">
       <!-- Prima riga -->
       <div class="header-container">
         <!-- Menu hamburger + MENU -->
@@ -60,36 +60,175 @@
 
       <!-- Riga nera (sottile) -->
       <div class="black-bar"></div>
-
-      <!-- Seconda riga: orizzontale -->
-      <div class="second-row">
-        <button class="btn btn-danger">ABBONATI</button>
-        <img
-          src="https://placehold.co/100x40?text=Logo"
-          alt="Logo"
-          class="logo-center"
-        />
-      </div>
-
-      <!-- Seconda riga: linea nera sotto -->
-      <div class="black-bar"></div>
     </header>
 
-    <!-- Terza riga: TEMI + Navbar -->
-    <div class="third-row">
-      <strong class="temi-title">TEMI</strong>
-      <nav class="temi-links">
-        <a href="#">Lorem Ipsum</a>
-        <a href="#">Dolor Sit</a>
-        <a href="#">Amet Consectetur</a>
-        <a href="#">Adipiscing Elit</a>
-        <a href="#">Sed Do</a>
-        <a href="#">Eiusmod Tempor</a>
-        <a href="#">Incididunt Ut</a>
-      </nav>
+    <!-- Seconda riga: orizzontale -->
+    <div class="second-row">
+      <button class="btn btn-danger">ABBONATI</button>
+      <img
+        src="https://placehold.co/100x40?text=Logo"
+        alt="Logo"
+        class="logo-center"
+      />
     </div>
 
-    <!-- Riga nera sottile sotto TEMI -->
+    <!-- Seconda riga: linea nera sotto -->
     <div class="black-bar"></div>
-  </body>
+
+    <!-- Terza riga: TEMI + Navbar -->
+    <div class="third-row-wrapper">
+      <div class="third-row">
+        <strong class="temi-title">TEMI</strong>
+        <nav class="temi-links">
+          <a href="#">Lorem Ipsum</a>
+          <a href="#">Dolor Sit</a>
+          <a href="#">Amet Consectetur</a>
+          <a href="#">Adipiscing Elit</a>
+          <a href="#">Sed Do</a>
+          <a href="#">Eiusmod Tempor</a>
+          <a href="#">Incididunt Ut</a>
+        </nav>
+      </div>
+      <div class="black-bar"></div>
+    </div>
+
+    <div class="spazio-bianco"></div>
+
+    <!-- Riga nera sopra la notizia -->
+    <div class="black-bar"></div>
+
+    <!-- Contenitore Notizia -->
+    <section class="news-section">
+      <h2 class="news-title">Titolo della Notizia Importante</h2>
+
+      <div class="news-content">
+        <img
+          src="https://placehold.co/300x200?text=Foto"
+          alt="Immagine della notizia"
+          class="news-image"
+        />
+        <div class="news-text">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Pellentesque vitae velit ex. Mauris dapibus risus quis suscipit
+            vulputate. Eget est lorem, varius vitae justo, mattis commodo magna.
+          </p>
+          <p>
+            Vivamus fermentum, quam sit amet ultricies malesuada, purus odio
+            tincidunt eros, eget luctus quam orci in velit. Integer sit amet mi
+            id nisi condimentum malesuada.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Riga nera sotto la notizia -->
+    <div class="black-bar"></div>
+
+    <!-- Spazio bianco -->
+    <div class="spazio-bianco"></div>
+
+    <!-- Riga nera di separazione -->
+    <div class="black-bar"></div>
+
+    <div class="daily-news-container">
+      <!-- Titolo della sezione Notizia del Giorno -->
+      <h2 class="daily-news-title">NOTIZIA DEL GIORNO</h2>
+    </div>
+
+    <!-- Notizia del giorno -->
+    <div class="daily-news-wrapper">
+      <!-- PARTE SINISTRA: Notizia principale -->
+      <div class="daily-news-main">
+        <h3 class="daily-news-headline">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        <div class="daily-news-content">
+          <img
+            src="https://placehold.co/300x200?text=Foto"
+            alt="Immagine notizia giorno"
+            class="daily-news-image"
+          />
+          <div class="daily-news-text">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Pellentesque vitae velit ex.
+            </p>
+            <p>
+              Vivamus fermentum, quam sit amet ultricies malesuada, purus odio
+              tincidunt eros.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- PARTE DESTRA: Mini notizia accanto -->
+      <div class="daily-news-mini">
+        <img
+          src="https://placehold.co/150x100?text=Mini+Foto"
+          alt="Mini notizia"
+          class="mini-news-image"
+        />
+        <div class="mini-news-text">
+          <strong>Mini Titolo Notizia che Occupano 5 Righe massimo</strong>
+        </div>
+        <a href="#" class="mini-news-link">
+          <i class="bi bi-arrow-right"></i>
+          <!-- freccia per il link -->
+        </a>
+      </div>
+    </div>
+
+    <!-- Riga nera dopo la sezione Notizia del Giorno -->
+    <div class="black-bar"></div>
+
+    <!-- Spazio bianco sopra la nuova sezione -->
+<div class="spacing"></div>
+
+<!-- Nuova Sezione: FATTI QUOTIDIANI -->
+<div class="custom-section">
+  <div class="black-bar"></div>
+  <div class="custom-section-content">
+    <!-- Lato sinistro -->
+    <div class="custom-section-left">
+      <div class="date">Data</div>
+      <div class="text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Pellentesque euismod, urna eu tincidunt congue, nisl arcu condimentum nisi, quis tincidunt eros lorem eu dui.
+        Donec ac ante ut felis faucibus pretium at sit amet metus.
+      </div>
+    </div>
+    
+    <!-- Immagine a sinistra -->
+    <div class="custom-section-image">
+      <img src="https://placehold.co/150x100?text=Foto+Sinistra" alt="Immagine Sinistra" class="news-image">
+      <!-- Freccia che è anche un link -->
+      <a href="pagina-sinistra.html" class="arrow-link">
+        <i class="bi bi-arrow-right"></i>
+      </a>
+    </div>
+
+    <!-- Lato destro -->
+    <div class="custom-section-right">
+      <div class="text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+        Sed at metus sit amet velit viverra auctor.
+      </div>
+    </div>
+    
+    <!-- Immagine a destra -->
+    <div class="custom-section-image">
+      <img src="https://placehold.co/150x100?text=Foto+Destra" alt="Immagine Destra" class="news-image">
+      <!-- Freccia che è anche un link -->
+      <a href="pagina-destra.html" class="arrow-link">
+        <i class="bi bi-arrow-right"></i>
+      </a>
+    </div>
+  </div>
+</div>
+<div class="black-bar"></div>
+
+
+
+</body>
 </html>

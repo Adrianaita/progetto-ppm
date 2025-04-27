@@ -6,7 +6,7 @@ body {
   }
   
   /* Header fisso in alto */
-  .site-header {
+  .header-top {
     background-color: white;
     position: sticky;
     top: 0;
@@ -22,9 +22,8 @@ body {
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    position: sticky; /* Aggiunto per fissare la prima riga */
     top: 0;
-    z-index: 100;
+    z-index: 1000;
   }
   
   /* Riga nera sottile */
@@ -117,8 +116,7 @@ body {
   /* Nascondi seconda riga su mobile */
   @media (max-width: 768px) {
     .navbar-links,
-    .second-row,
-    .black-bar:last-of-type {
+    .second-row {
       display: none;
     }
   }
@@ -132,10 +130,17 @@ body {
     align-items: center;
     justify-content: flex-start;
     gap: 20px;
-    position: sticky; /* Aggiunto per fissare la terza riga */
-    top: 70px; /* Aggiungi un piccolo offset per evitare che si sovrapponga alla prima riga */
-    background-color: white; /* Impostato uno sfondo bianco per evitare trasparenze */
+    top: 70px;
+    background-color: white;
     z-index: 100;
+    position:sticky;
+  }
+
+  .third-row-wrapper { 
+    position:sticky;
+    top:70px;
+    background-color: white;
+    z-index:999
   }
   
   /* Titolo TEMI (a sinistra) */
@@ -160,4 +165,293 @@ body {
     white-space: nowrap;
   }
 
+  /* Sezione Notizia */
+
+  .spazio-bianco{
+    height: 300px;
+  }
+
+  .news-section {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+  }
+  
+  .news-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: black;
+    text-align: center;
+  }
+  
+  .news-content {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    flex-wrap: wrap; /* utile per mobile */
+  }
+  
+  .news-image {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  .news-text {
+    flex: 1;
+    font-size: 1rem;
+    color: black;
+  }
+  
+  /* Responsive: su schermi piccoli metti immagine sopra e testo sotto */
+  @media (max-width: 768px) {
+    .news-content {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    
+    .news-image {
+      max-width: 100%;
+    }
+    
+    .news-text {
+      text-align: left;
+    }
+  }
+
+   /* Riga nera sopra il titolo della sezione */
+.black-bar {
+  width: 100%;
+  height: 2px;
+  background-color: black;
+  margin-bottom: 0;
+  box-sizing: border-box;
+}
+
+.daily-news-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/* Titolo della sezione Notizia del Giorno */
+.daily-news-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 10px 0;
+  color: black;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+/* Contenitore della notizia del giorno */
+.daily-news-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+/* Contenuto principale della notizia */
+.daily-news-main {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+}
+
+.daily-news-headline {
+  font-family: 'Georgia', 'Times New Roman', serif;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: black;
+}
+
+.daily-news-content {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.daily-news-image {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  object-fit: cover;
+  margin-top: 20px;
+}
+
+.daily-news-text {
+  flex: 1;
+  font-size: 1rem;
+  color: black;
+}
+
+/* Mini Notizia accanto */
+.daily-news-mini {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  padding-top: 0;
+}
+
+.mini-news-image {
+  width: 100%;
+  max-width: 250px;
+  height: auto;
+  object-fit: cover;
+}
+
+.mini-news-text {
+  font-size: 1rem;
+  font-weight: bold;
+  color: black;
+  line-height: 1.5;
+  max-height: 7.5rem;
+  overflow: hidden;
+}
+
+.mini-news-link {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: black;
+}
+
+/* Responsività per schermi più piccoli */
+@media (max-width: 768px) {
+  .daily-news-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .daily-news-main, .daily-news-mini {
+    flex: unset;
+    width: 100%;
+  }
+
+  .daily-news-image {
+    max-width: 100%;
+  }
+
+  .daily-news-text {
+    text-align: left;
+  }
+
+  .mini-news-image {
+    max-width: 100%;
+  }
+}
+
+/* Nuova sezione con spazio bianco e una riga nera */
+.custom-section {
+  margin-top: 40px;
+  padding: 0 80px;
+  padding-bottom: 20px;
+}
+
+.custom-section .black-bar {
+  width: 100%;
+  height: 2px;
+  background-color: black;
+  margin-bottom: 30px;
+}
+
+.custom-section-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.custom-section-left,
+.custom-section-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+.custom-section-left .date {
+  font-size: 1rem;
+  color: gray;
+}
+
+.custom-section-left .text {
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 1rem;
+  color: black;
+  line-height: 1.5;
+}
+
+.custom-section-image {
+  width: 100%;
+  max-width: 150px;
+  height: auto;
+  object-fit: cover;
+}
+
+.custom-section-right .text {
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 1rem;
+  color: black;
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .custom-section-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .custom-section-left,
+  .custom-section-right {
+    width: 100%;
+  }
+
+  .custom-section-image {
+    max-width: 100%;
+  }
+}
+
+/* Posizionamento della freccia sotto le immagini */
+.arrow-link {
+  display: block;
+  text-align: center;
+  margin-top: 10px; 
+  font-size: 1.5rem;
+  color: black; 
+  text-decoration: none; 
+}
+
+.arrow-link:hover {
+  color: #dc3545;
+}
+
+
+.arrow-link i {
+  transition: transform 0.3s ease;
+}
+
+.arrow-link:hover i {
+  transform: translateX(5px);
+}
+
+
+
+
+
+
+  
   
