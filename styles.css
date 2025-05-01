@@ -112,7 +112,7 @@ body {
     height: 50px;
   }
   
-  /* Nascondi seconda riga su mobile */
+  /* Nascosta seconda riga su mobile */
   @media (max-width: 768px) {
     .navbar-links,
     .second-row {
@@ -295,7 +295,7 @@ body {
   color: black;
 }
 
-/* Mini Notizia accanto */
+/* Mini Notizia */
 .daily-news-mini {
   flex: 1;
   display: flex;
@@ -1018,7 +1018,6 @@ body {
   gap: 40px;
 }
 
-/* Mini notizia */
 .mini-news-item-2{
   display: flex;
   align-items: flex-start;
@@ -1138,7 +1137,7 @@ body {
   box-sizing: border-box;
 }
 
-/* Sezione delle citazioni */
+/* Sezione Blog */
 .quotes-section {
   padding: 40px 0;
 }
@@ -1204,24 +1203,4 @@ body {
     width: 100%;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
+ 
